@@ -37,7 +37,7 @@ fun ObjectScreen(){
         LazyColumn(modifier = Modifier
             .fillMaxSize()
             .padding(paddingValues),
-            contentPadding = PaddingValues(vertical = 8.dp)) {
+            contentPadding = PaddingValues(8.dp)) {
             items(
              items = champions,
                 key = {

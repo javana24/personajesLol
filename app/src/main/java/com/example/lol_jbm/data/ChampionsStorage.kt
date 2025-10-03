@@ -30,7 +30,7 @@ object ChampionsStorage {
             ),
 
             Champion(
-                name = "leona",
+                name = "Leona",
                 description = " La Portadora de la Luz",
                 image = R.drawable.leona
             ),
