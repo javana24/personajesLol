@@ -33,6 +33,7 @@ fun ObjectScreen(){
             )
         }
     ){
+
         paddingValues ->
         LazyColumn(modifier = Modifier
             .fillMaxSize()
