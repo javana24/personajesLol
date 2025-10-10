@@ -2,6 +2,7 @@ package com.example.lol_jbm.ui.theme.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -22,7 +23,7 @@ import com.example.lol_jbm.data.Champion
 
 @Composable
 fun ChampionItemDesign(champion: Champion){
-    Row (modifier = Modifier.fillMaxWidth().border(0.5.dp,Color.Black)){
+    Row (modifier = Modifier.fillMaxWidth().clickable{}.border(0.5.dp,Color.Black)){
         Image(
 
             modifier = Modifier.size(80.dp).padding(horizontal = 8.dp).padding(vertical = 4.dp).clip(CircleShape),
