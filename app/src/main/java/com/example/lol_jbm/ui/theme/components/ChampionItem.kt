@@ -22,8 +22,12 @@ import androidx.compose.ui.unit.dp
 import com.example.lol_jbm.data.Champion
 
 @Composable
-fun ChampionItemDesign(champion: Champion){
-    Row (modifier = Modifier.fillMaxWidth().clickable{}.border(0.5.dp,Color.Black)){
+fun ChampionItemDesign(champion: Champion, function: () -> Unit){
+    Row (modifier = Modifier.fillMaxWidth()
+        .clickable{
+            function()
+        }.border(0.5.dp,Color.Black)
+    ){
         Image(
 
             modifier = Modifier.size(80.dp).padding(horizontal = 8.dp).padding(vertical = 4.dp).clip(CircleShape),

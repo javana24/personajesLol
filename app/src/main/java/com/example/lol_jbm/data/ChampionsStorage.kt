@@ -91,3 +91,7 @@ object ChampionsStorage {
         )
     }
 }
+
+object SelectedChampion {
+    var champion: Champion? = null
+}
